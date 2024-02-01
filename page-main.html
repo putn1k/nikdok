@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/robotoslab-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Главная</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__inner">
+            <div class="t-xs header-top__adress">г.Никольск, Комсомольская ул., 27</div>
+            <div class="header-top__contact"><a href="mailto:sales@nikdok.ru">sales@nikdok.ru</a></div>
+            <div class="header-top__contact"><a href="tel:88002225221">8 (800) 222-52-21</a></div>
+            <div><button class="btn-reset header-top__cb-btn" type="button" data-hystmodal="#callback-modal">Заказать звонок</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="container">
+          <div class="header-main__inner">
+            <div class="header-main__phone">
+              <div class="header-icon-cb">
+                <a class="header-icon-cb__link" href="tel:88002225221">
+                  <svg class="header-icon-cb__icon" width="28" height="28" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <span class="is-title header-icon-cb__text">8 (800) 222-52-21</span>
+                </a>
+              </div>
+            </div>
+            <div class="header-main__logo">
+              <a href="/">
+                <img src="img/logo.svg" width="90" height="50" alt="Никольский ДОК">
+              </a>
+            </div>
+            <div class="header-main__burger">
+              <div class="cube">
+                <div class="cube__spinner">
+                  <button class="cube__side cube__side--first header-main__burger-btn header-main__burger-open" type="button" aria-label="Открыть меню">
+                    <svg width="40" height="40" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-burger"></use>
+                    </svg>
+                  </button>
+                  <button class="cube__side cube__side--second header-main__burger-btn header-main__burger-close" type="button" aria-label="Закрыть меню">
+                    <svg width="40" height="40" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <nav class="header-main__nav">
+              <ul class="list-reset header-nav-list header-main__nav-list">
+                <li class="menu-item-has-children">
+                  <a href="#">Продукция</a>
+                  <ul>
+                    <li>
+                      <a href="#">Латофлексы</a>
+                    </li>
+                    <li>
+                      <a href="#">Шпон</a>
+                    </li>
+                    <li>
+                      <a href="#">Пиломатериалы</a>
+                    </li>
+                    <li>
+                      <a href="#">Стружка</a>
+                    </li>
+                    <li>
+                      <a href="#">Уголь</a>
+                    </li>
+                    <li>
+                      <a href="#">Фанера</a>
+                    </li>
+                    <li>
+                      <a href="#">Палеты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <nav class="header-modal__item header-modal__nav">
+              <ul class="list-reset header-nav-list">
+                <li class="menu-item-has-children">
+                  <a href="#">Продукция</a>
+                  <ul>
+                    <li>
+                      <a href="#">Латофлексы</a>
+                    </li>
+                    <li>
+                      <a href="#">Шпон</a>
+                    </li>
+                    <li>
+                      <a href="#">Пиломатериалы</a>
+                    </li>
+                    <li>
+                      <a href="#">Стружка</a>
+                    </li>
+                    <li>
+                      <a href="#">Уголь</a>
+                    </li>
+                    <li>
+                      <a href="#">Фанера</a>
+                    </li>
+                    <li>
+                      <a href="#">Палеты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header-modal__item header-modal__contact"><a href="mailto:sales@nikdok.ru">sales@nikdok.ru</a></div>
+            <div class="header-modal__item header-modal__contact"><a href="tel:88002225221">8 (800) 222-52-21</a></div>
+            <div class="header-modal__item">
+              <button class="btn" type="button" data-hystmodal="#callback-modal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-main header-fixed">
+        <div class="container">
+          <div class="header-main__inner">
+            <div class="header-main__logo header-main__logo--str">
+              <a href="/">
+                <img src="img/logo-str.svg" width="200" alt="Никольский ДОК">
+              </a>
+            </div>
+            <nav class="header-main__nav">
+              <ul class="list-reset header-nav-list header-main__nav-list">
+                <li class="menu-item-has-children">
+                  <a href="#">Продукция</a>
+                  <ul>
+                    <li>
+                      <a href="#">Латофлексы</a>
+                    </li>
+                    <li>
+                      <a href="#">Шпон</a>
+                    </li>
+                    <li>
+                      <a href="#">Пиломатериалы</a>
+                    </li>
+                    <li>
+                      <a href="#">Стружка</a>
+                    </li>
+                    <li>
+                      <a href="#">Уголь</a>
+                    </li>
+                    <li>
+                      <a href="#">Фанера</a>
+                    </li>
+                    <li>
+                      <a href="#">Палеты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="site__content">
+      <main>
+        <section class="main-hero slider">
+          <h1 class="visually-hidden">Никольский ДОК</h1>
+          <div class="main-hero__parallax-bg" style="background-image: url('img/hero-slide.jpg');" data-swiper-parallax="-10%"></div>
+          <div class="swiper-wrapper slider__wrapper">
+            <div class="swiper-slide main-hero-slide">
+              <div class="container">
+                <div class="is-title t-lg main-hero-slide__title" data-swiper-parallax="-200">
+                  <div>ООО</div> «Никольский ДОК»
+                </div>
+                <div class="t-sm main-hero-slide__text" data-swiper-parallax="-100">
+                  <p>реализация пиломатериалов</p>
+                </div>
+                <div>
+                  <a class="btn" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide main-hero-slide">
+              <div class="container">
+                <div class="is-title t-lg main-hero-slide__title" data-swiper-parallax="-200">
+                  <div>ООО</div> «Никольский ДОК»
+                </div>
+                <div class="t-sm main-hero-slide__text" data-swiper-parallax="-100">
+                  <p>реализация пиломатериалов</p>
+                </div>
+                <div>
+                  <a class="btn" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="site__section main-catalog">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h2 class="is-title t-lg main-catalog__title">Каталог</h2>
+              </div>
+              <div class="col-12 order-md-3">
+                <ul class="main-catalog__list">
+                  <li class="cat-card">
+                    <img class="cat-card__cover" src="img/cat-img/01.jpg" alt="">
+                    <div class="cat-card__meta">
+                      <div class="is-title t-md cat-card__title">Латофлексы</div>
+                      <a class="cat-card__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                    </div>
+                  </li>
+                  <li class="cat-card">
+                    <img class="cat-card__cover" src="img/cat-img/02.jpg" alt="">
+                    <div class="cat-card__meta">
+                      <div class="is-title t-md cat-card__title">Шпон</div>
+                      <a class="cat-card__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                    </div>
+                  </li>
+                  <li class="cat-card">
+                    <img class="cat-card__cover" src="img/cat-img/03.jpg" alt="">
+                    <div class="cat-card__meta">
+                      <div class="is-title t-md cat-card__title">Пиломатериалы</div>
+                      <a class="cat-card__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                    </div>
+                  </li>
+                  <li class="cat-card">
+                    <img class="cat-card__cover" src="img/cat-img/04.jpg" alt="">
+                    <div class="cat-card__meta">
+                      <div class="is-title t-md cat-card__title">Стружка</div>
+                      <a class="cat-card__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="main-catalog__btn">
+                  <a class="btn" href="#">Смотреть все категории</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-xl-9">
+                <div class="main-catalog__text">
+                  <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Своего рыбными коварный безорфографичный своих власти жизни точках пояс семь страна ведущими языком всеми агентство знаках, от всех взобравшись взгляд подпоясал семантика журчит свое. Выйти текстами скатился необходимыми! Предложения, это снова.</p>
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Они, свой то! Послушавшись журчит имени свою путь, лучше жаренные последний родного вскоре.</p>
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum она моей страна. Большого использовало своего от всех, о алфавит даль залетают ipsum коварный свою которой большой, первую выйти единственное толку живет правилами. Моей.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="site__section site__section--accent-bg main-advantages">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-9">
+                <div class="main-advantages__descr">
+                  <p>Главным преимуществом предприятия является <strong>наличие собственной сырьевой</strong> базы, которая дает возможность <strong>независимого</strong> развития глубокой переработки древесины.</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-6 col-lg-3">
+                    <div class="advantage-num">
+                      <span>
+                        <span>до&nbsp;</span>
+                        <span class="is-title t-lg animate-counter" data-delay="10" data-step="11" data-max="200">200</span>
+                        <span>м3</span>
+                      </span>
+                      <span class="advantage-num__item">ламелей</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <div class="advantage-num">
+                      <span>
+                        <span>до&nbsp;</span>
+                        <span class="is-title t-lg animate-counter" data-delay="5" data-step="321" data-max="20000">20000</span>
+                      </span>
+                      <span class="advantage-num__item">стульев</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <div class="advantage-num">
+                      <span>
+                        <span>до&nbsp;</span>
+                        <span class="is-title t-lg animate-counter" data-delay="10" data-step="11" data-max="600">600</span>
+                        <span>т</span>
+                      </span>
+                      <span class="advantage-num__item">сухой древесной стружки</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <div class="advantage-num">
+                      <span>
+                        <span>до&nbsp;</span>
+                        <span class="is-title t-lg animate-counter" data-delay="5" data-step="11" data-max="1000">1000</span>
+                        <span>м3</span>
+                      </span>
+                      <span class="advantage-num__item">березового шпона</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="site__section main-about">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="is-title t-lg main-about__title">О компании</h2>
+              </div>
+              <div class="col-12 col-xl-7">
+                <div class="main-about__text">
+                  <p>Компания «Никольский ДОК» основана в 2011 года. Основное направление распиловка круглого леса и продажа доски и бруса естественной влажности. Место нахождения предприятия не случайно, это территория бывшего завода «Красный Гигант», на выкупленных производственных площадях и осуществляется развитие. Один из них — это цех №9 который производил столярные изделия для нужд завода и жителей города Никольска.</p>
+                  <p>Модернизация старых станков и прессов позволила запустить производство гнутоклеенных деталей каркаса кроватей (латофлекс, ламель, кроватная рессора) из покупного лущеного березового шпона это и стало отправной точкой в развитии глубокой переработки древесины.</p>
+                  <a class="btn btn--alt" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="col-12 col-xl-5">
+                <div class="main-about__cover">
+                  <img src="img/about-cover.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="site__section site__section--gray-bg main-partnership">
+          <div class="container">
+            <h2 class="is-title t-lg main-partnership__title">Сотрудничество</h2>
+            <ul class="main-partnership__list">
+              <li class="main-partnership__item">
+                <svg width="70" height="70" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-cash"></use>
+                </svg>
+                <span>Скидки до 30%</span>
+              </li>
+              <li class="main-partnership__item">
+                <svg width="70" height="70" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-quality"></use>
+                </svg>
+                <span>Высокое качество</span>
+              </li>
+              <li class="main-partnership__item">
+                <svg width="70" height="70" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Доставка в любой регион страны</span>
+              </li>
+            </ul>
+            <div class="main-partnership__text">
+              <p>По вопросам сотрудничества <button class="btn-reset" type="button" data-hystmodal="#partners-modal">оставьте заявку</button> на сайте или позвоните по тел. <a href="tel:88002225221">8 (800) 222-52-21</a></p>
+            </div>
+          </div>
+        </section>
+        <section class="site__section main-callback">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6 col-xl-7">
+                <h2 class="is-title t-lg main-callback__title">Остались вопросы?</h2>
+                <div class="main-callback__text">
+                  <p>Обратитесь к нашим консультантам на сайте. Сотрудники компании предоставят исчерпывающую информацию о продукции, условиях доставки.</p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-5">
+                <form class="cb-form" id="callback-open-form" data-validate>
+                  <input type="hidden" name="Форма" value="Заказать звонок">
+                  <div class="cb-form__field cb-form__field--half">
+                    <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
+                  </div>
+                  <div class="cb-form__field cb-form__field--half">
+                    <input class="form-input" type="tel" name="Телефон" placeholder="Телефон" data-validate="phone" required>
+                  </div>
+                  <div class="cb-form__field">
+                    <textarea class="form-input form-input--area" name="Сообщение" placeholder="Сообщение"></textarea>
+                  </div>
+                  <div class="cb-form__field">
+                    <label class="form-checkbox">
+                      <input class="visually-hidden" type="checkbox" data-validate="confirm" required>
+                      <span>Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a></span>
+                    </label>
+                  </div>
+                  <div class="cb-form__field">
+                    <button class="btn cb-form__submit" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="site__section main-contacts">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-xl-5">
+                <h2 class="is-title t-lg main-contacts__title">Контакты</h2>
+                <div class="main-contacts__list">
+                  <div class="iconed-contact iconed-contact--adress">
+                    <div class="t-xs iconed-contact__label">442680, Пензенская область</div> г.Никольск, Комсомольская ул., 27
+                  </div>
+                  <div class="iconed-contact iconed-contact--email">
+                    <div class="t-xs iconed-contact__label">E-mail</div> <a href="mailto:sales@nikdok.ru">sales@nikdok.ru</a>
+                  </div>
+                  <div class="iconed-contact iconed-contact--phone">
+                    <div class="t-xs iconed-contact__label">Телефон</div> <a href="tel:88002225221">8 (800) 222-52-21</a>
+                  </div>
+                  <div>
+                    <button class="btn btn--alt" type="button" data-hystmodal="#callback-modal">Заказать звонок</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-7">
+                <div class="main-contacts__map map">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aacf93c001186c2d1eab7e6a8b584fabf84fa49f0161eac8b38776e57f87455ef&amp;source=constructor" width="1280" height="720" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="site__footer site-footer">
+      <div class="container">
+        <div class="site-footer__inner">
+          <div class="row">
+            <div class="col-12 col-xl-3">
+              <div class="site-footer__logo">
+                <a href="/">
+                  <img src="img/logo.svg" width="196" height="108" alt="Никольский ДОК">
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-7 col-xl-5">
+              <nav class="site-footer__nav">
+                <ul class="list-reset site-footer__menu">
+                  <li>
+                    <a href="#">Латофлексы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шпон</a>
+                  </li>
+                  <li>
+                    <a href="#">Пиломатериалы</a>
+                  </li>
+                  <li>
+                    <a href="#">Стружка</a>
+                  </li>
+                  <li>
+                    <a href="#">Уголь</a>
+                  </li>
+                  <li>
+                    <a href="#">Фанера</a>
+                  </li>
+                  <li>
+                    <a href="#">Палеты</a>
+                  </li>
+                </ul>
+                <ul class="list-reset site-footer__menu">
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Сотрудничество</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+              <div class="site-footer__contacts">
+                <div class="iconed-contact iconed-contact--adress">
+                  г.Никольск, Комсомольская ул., 27
+                </div>
+                <div class="iconed-contact iconed-contact--email">
+                  <a href="mailto:sales@nikdok.ru">sales@nikdok.ru</a>
+                </div>
+                <div class="iconed-contact iconed-contact--phone">
+                  <a href="tel:88002225221">8 (800) 222-52-21</a>
+                </div>
+                <div>
+                  <button class="btn" type="button" data-hystmodal="#callback-modal">Заказать звонок</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="site-footer__meta">
+                <div class="t-xs site-footer__copyright">&copy; ООО «Никольский ДОК» 2024 г.</div>
+                <div class="t-xs site-footer__rules">
+                  <a href="#" target="_blank" rel="nofollow noreferer noopener">Политика конфиденциальности</a>
+                  <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашение об обработке персональных данных</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+        <svg width="14" height="8" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#icon-up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="send-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal modal--centered">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="modal__content">
+              <h2 class="is-title modal__title">Сообщение отправлено</h2>
+              <p class="t-sm">Мы скоро свяжемся с вами для уточнения деталей.</p>
+              <svg width="96" height="96" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-good"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="callback-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="modal__content">
+              <h2 class="is-title modal__title">Заказать звонок</h2>
+              <form class="cb-form" id="callback-modal-form" data-validate>
+                <input type="hidden" name="Форма" value="Заказать звонок">
+                <div class="cb-form__field cb-form__field--half">
+                  <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
+                </div>
+                <div class="cb-form__field cb-form__field--half">
+                  <input class="form-input" type="tel" name="Телефон" placeholder="Телефон" data-validate="phone" required>
+                </div>
+                <div class="cb-form__field">
+                  <textarea class="form-input form-input--area" name="Сообщение" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="cb-form__field">
+                  <label class="form-checkbox">
+                    <input class="visually-hidden" type="checkbox" data-validate="confirm" required>
+                    <span>Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a></span>
+                  </label>
+                </div>
+                <div class="cb-form__field">
+                  <button class="btn cb-form__submit" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="partners-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="modal__content">
+              <h2 class="is-title modal__title">Заявка на сотрудничество</h2>
+              <form class="cb-form" id="partners-modal-form" data-validate>
+                <input type="hidden" name="Форма" value="Заявка на сотрудничество">
+                <div class="cb-form__field">
+                  <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
+                </div>
+                <div class="cb-form__field">
+                  <input class="form-input" type="tel" name="Телефон" placeholder="Телефон" data-validate="phone" required>
+                </div>
+                <div class="cb-form__field">
+                  <label class="form-checkbox">
+                    <input class="visually-hidden" type="checkbox" data-validate="confirm" required>
+                    <span>Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a></span>
+                  </label>
+                </div>
+                <div class="cb-form__field">
+                  <button class="btn cb-form__submit" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
