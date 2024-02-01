@@ -1,0 +1,132 @@
+.site-footer {
+  color: var(--primary-color);
+  background-color: var(--theme-light-gray);
+
+  &__inner {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    text-align: center;
+
+    & img {
+      width: 196px;
+      height: 108px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 30px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  &__menu {
+    display: grid;
+    row-gap: 16px;
+
+    & a {
+      color: inherit;
+      font-weight: 500;
+    }
+  }
+
+  &__contacts {
+    display: grid;
+    row-gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  &__meta {
+    text-align: center;
+  }
+
+  &__copyright {
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--theme-medium-gray);
+  }
+
+  &__rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & a {
+      --link-line: var(--theme-medium-gray);
+
+      font-weight: 500;
+      margin-bottom: 12px;
+      color: var(--theme-medium-gray);
+    }
+  }
+
+  @include media-min ($xl) {
+    &__inner {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+
+    &__logo {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    &__nav {
+      gap: 30px;
+      margin-bottom: 0;
+    }
+
+    &__menu {
+      row-gap: 20px;
+
+      & a {
+        transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out;
+
+        &:hover {
+          color: var(--secondary-accent-color);
+          text-decoration-color: inherit;
+        }
+      }
+    }
+
+    &__contacts {
+      row-gap: 20px;
+      margin-bottom: 0;
+    }
+
+    &__meta {
+      display: flex;
+      text-align: left;
+      margin-top: 50px;
+    }
+
+    &__copyright {
+      margin-bottom: 0;
+      flex-grow: 1;
+      font-weight: 400;
+    }
+
+    &__rules {
+      flex-direction: row;
+
+      & a {
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-left: 30px;
+        transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out;
+
+        &:hover {
+          color: var(--secondary-accent-color);
+          text-decoration-color: inherit;
+        }
+      }
+    }
+
+
+  }
+}

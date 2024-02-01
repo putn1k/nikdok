@@ -1,0 +1,17 @@
+.header-fixed {
+  display: none;
+
+  @include media-min ($xl) {
+    @include anim(fade-down, .6s);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+
+    &--show {
+      display: block;
+    }
+  }
+}

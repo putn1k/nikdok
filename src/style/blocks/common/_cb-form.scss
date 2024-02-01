@@ -1,0 +1,20 @@
+.cb-form {
+  display: grid;
+  gap: 16px;
+
+  &__submit {
+    width: 100%;
+  }
+
+  @include media-min ($md) {
+    grid-template-columns: repeat(2, 1fr);
+
+    &__field {
+      grid-column: span 2;
+
+      &--half {
+        grid-column: span 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.main-hero-slide {
+  display: flex;
+  align-items: center;
+  min-height: 538px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    @include cms-text;
+
+    margin-bottom: 40px;
+  }
+
+  @include media-min ($xl) {
+    min-height: 800px;
+  }
+}

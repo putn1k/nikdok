@@ -1,0 +1,47 @@
+.site {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100 * var(--vh, 1vh));
+  }
+
+  &__header {
+    flex-shrink: 0;
+  }
+
+  &__content {
+    flex-grow: 1;
+    margin-top: var(--offset-top, 0);
+  }
+
+  &__section {
+    padding: 60px 0;
+
+    &--accent-bg {
+      color: var(--primary-color);
+      background-color: var(--primary-accent-color);
+    }
+
+    &--gray-bg {
+      color: var(--primary-color);
+      background-color: var(--theme-light-gray);
+    }
+
+  }
+
+  &__footer {
+    flex-shrink: 0;
+  }
+
+  @include media-min ($md) {
+    &__section {
+      padding: 80px 0;
+    }
+  }
+
+  @include media-min ($xl) {
+    &__section {
+      padding: 120px 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+:root {
+  --white: #FFFFFF;
+  --black: #1E1000;
+  --wood: #FFF0DF;
+  --red: #FC1B1B;
+  --red-wood: #9B0A0A;
+  --metall: #8F989B;
+  --wild-sand: #F4F4F4;
+
+  // theme vars
+  --primary-color: var(--black);
+  --secondary-color: var(--white);
+  --third-color: var(--white);
+  --primary-accent-color: var(--wood);
+  --secondary-accent-color: var(--red-wood);
+  --theme-light-gray: var(--wild-sand);
+  --theme-medium-gray: var(--metall);
+  --error: var(--red);
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$primary-font: "Roboto";
+$secondary-font: "Roboto Slab";

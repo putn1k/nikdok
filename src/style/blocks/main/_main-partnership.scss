@@ -1,0 +1,77 @@
+.main-partnership {
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    @include list-reset;
+
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    text-align: center;
+    margin-bottom: 20px;
+
+    & svg {
+      width: 70px;
+      height: 70px;
+    }
+
+    & span {
+      display: block;
+      margin-top: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__text {
+    @include cms-text;
+
+    & a,
+    & button {
+      font-weight: 500;
+      color: var(--secondary-accent-color);
+    }
+  }
+
+  @include media-min ($md) {
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      flex-basis: 100%;
+    }
+
+    &__text {
+      width: 80%;
+    }
+  }
+
+  @include media-min ($xl) {
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__text {
+
+      & a,
+      & button {
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out;
+
+        &:hover {
+          color: var(--secondary-accent-color);
+          text-decoration-color: inherit;
+        }
+      }
+    }
+  }
+}

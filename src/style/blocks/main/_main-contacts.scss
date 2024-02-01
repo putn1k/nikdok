@@ -1,0 +1,31 @@
+.main-contacts {
+  padding-top: 0;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 16px;
+  }
+
+  &__map {
+    margin-top: 50px;
+    height: 300px;
+    border-radius: 16px;
+    background-image: url('../img/map-cover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @include media-min ($xl) {
+
+    &__map {
+      margin-top: 0;
+      height: 400px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<div class="header-main">
+  <div class="container">
+    <div class="header-main__inner">
+      <div class="header-main__phone">
+        <div class="header-icon-cb">
+          <a class="header-icon-cb__link"
+             href="tel:88002225221">
+            <svg class="header-icon-cb__icon"
+                 width="28"
+                 height="28"
+                 aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            <span class="is-title header-icon-cb__text">8 (800) 222-52-21</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-main__logo">
+        <a href="/">
+          <img src="img/logo.svg"
+               width="90"
+               height="50"
+               alt="Никольский ДОК">
+        </a>
+      </div>
+      <div class="header-main__burger">
+        <div class="cube">
+          <div class="cube__spinner">
+            <button class="cube__side cube__side--first header-main__burger-btn header-main__burger-open"
+                    type="button"
+                    aria-label="Открыть меню">
+              <svg width="40"
+                   height="40"
+                   aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+            <button class="cube__side cube__side--second header-main__burger-btn header-main__burger-close"
+                    type="button"
+                    aria-label="Закрыть меню">
+              <svg width="40"
+                   height="40"
+                   aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav class="header-main__nav">@include('nav-list.html', {class: 'header-main__nav-list'})</nav>
+    </div>
+  </div>
+</div>

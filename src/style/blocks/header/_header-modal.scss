@@ -1,0 +1,54 @@
+.header-modal {
+  pointer-events: none;
+
+  &[aria-hidden="false"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 20;
+    pointer-events: auto;
+
+    & .header-modal__content {
+      display: block;
+
+      @include anim(fade-in, .3s);
+    }
+  }
+
+  &__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    display: none;
+    width: 100%;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    overflow: auto;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__nav {
+    margin-bottom: 50px;
+  }
+
+  &__contact {
+    & a {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+
+  @include media-min ($xl) {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+<footer class="site__footer site-footer">
+  <div class="container">
+    <div class="site-footer__inner">
+      <div class="row">
+        <div class="col-12 col-xl-3">
+          <div class="site-footer__logo">
+            <a href="/">
+              <img src="img/logo.svg"
+                   width="196"
+                   height="108"
+                   alt="Никольский ДОК">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-7 col-xl-5">
+          <nav class="site-footer__nav">
+            @include('nav-cat.html', {class: 'site-footer__menu'})
+            @include('nav-site.html', {class: 'site-footer__menu'})
+          </nav>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+          <div class="site-footer__contacts">
+            <div class="iconed-contact iconed-contact--adress">
+              г.Никольск, Комсомольская ул., 27
+            </div>
+            <div class="iconed-contact iconed-contact--email">
+              <a href="mailto:sales@nikdok.ru">sales@nikdok.ru</a>
+            </div>
+            <div class="iconed-contact iconed-contact--phone">
+              <a href="tel:88002225221">8 (800) 222-52-21</a>
+            </div>
+            <div>
+              <button class="btn"
+                      type="button"
+                      data-hystmodal="#callback-modal">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="site-footer__meta">
+            <div class="t-xs site-footer__copyright">&copy; ООО «Никольский ДОК» 2024 г.</div>
+            <div class="t-xs site-footer__rules">
+              <a href="#"
+                 target="_blank"
+                 rel="nofollow noreferer noopener">Политика конфиденциальности</a>
+              <a href="#"
+                 target="_blank"
+                 rel="nofollow noreferer noopener">Соглашение об обработке персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+@include('../common/scroll-top.html')
+@include('../modal/index.html')

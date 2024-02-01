@@ -1,0 +1,8 @@
+.advantage-num {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    padding: 6px 0 20px;
+  }
+}

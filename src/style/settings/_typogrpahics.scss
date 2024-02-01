@@ -1,0 +1,71 @@
+body {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: $primary-font, Arial, Helvetica, sans-serif;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+a {
+  color: var(--secondary-accent-color);
+  text-decoration-color: var(--link-line, transparent);
+}
+
+.is-title {
+  font-family: $secondary-font, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.t-lg {
+  font-size: 32px;
+}
+
+.t-md {
+  font-size: 24px;
+}
+
+.t-sm {
+  font-size: 18px;
+}
+
+.t-xs {
+  font-size: 14px;
+}
+
+@include media-min ($xl) {
+  body {
+    font-size: 18px;
+  }
+
+  .t-lg {
+    font-size: 42px;
+  }
+
+  .t-md {
+    font-size: 32px;
+  }
+
+  .t-sm {
+    font-size: 20px;
+  }
+
+  .t-xs {
+    font-size: 16px;
+  }
+}

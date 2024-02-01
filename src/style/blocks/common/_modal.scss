@@ -1,0 +1,39 @@
+.modal {
+  position: relative;
+  margin: 0 auto;
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 400px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+
+  &--centered {
+    text-align: center;
+  }
+
+  &__close {
+    @include btn-reset;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: var(--theme-medium-gray);
+  }
+
+  &__title {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  @include media-min ($xl) {
+    padding: 60px;
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,41 @@
+<form class="cb-form"
+      id="@id"
+      data-validate>
+  <input type="hidden"
+         name="Форма"
+         value="Заказать звонок">
+  <div class="cb-form__field cb-form__field--half">
+    <input class="form-input"
+           type="text"
+           name="Имя"
+           placeholder="Имя"
+           data-validate="name"
+           required>
+  </div>
+  <div class="cb-form__field cb-form__field--half">
+    <input class="form-input"
+           type="tel"
+           name="Телефон"
+           placeholder="Телефон"
+           data-validate="phone"
+           required>
+  </div>
+  <div class="cb-form__field">
+    <textarea class="form-input form-input--area"
+              name="Сообщение"
+              placeholder="Сообщение"></textarea>
+  </div>
+  <div class="cb-form__field">
+    <label class="form-checkbox">
+      <input class="visually-hidden"
+             type="checkbox"
+             data-validate="confirm"
+             required>
+      <span>@include('../common/confirm-text.html')</span>
+    </label>
+  </div>
+  <div class="cb-form__field">
+    <button class="btn cb-form__submit"
+            type="submit">Отправить</button>
+  </div>
+</form>

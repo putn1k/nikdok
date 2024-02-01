@@ -1,0 +1,23 @@
+.main-advantages {
+  &__descr {
+    @include cms-text;
+
+    margin-bottom: 30px;
+
+    & strong {
+      color: var(--secondary-accent-color);
+    }
+  }
+
+  @include media-min ($md) {
+    &__descr {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include media-min ($xl) {
+    &__descr {
+      margin-bottom: 60px;
+    }
+  }
+}

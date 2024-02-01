@@ -1,0 +1,12 @@
+.main-callback {
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @include cms-text;
+
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,44 @@
+.header-top {
+  display: none;
+
+  @include media-min ($xl) {
+    display: block;
+    color: var(--primary-color);
+    background-color: var(--primary-accent-color);
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      height: 40px;
+    }
+
+    &__adress {
+      margin-right: auto;
+    }
+
+    &__contact {
+      margin-left: 30px;
+
+      & a {
+        color: var(--primary-color);
+        transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out;
+
+        &:hover {
+          color: var(--secondary-accent-color);
+          text-decoration-color: inherit;
+        }
+      }
+    }
+
+    &__cb-btn {
+      font-weight: 500;
+      margin-left: 30px;
+      color: var(--primary-color);
+      transition: color .2s ease-in-out;
+
+      &:hover {
+        color: var(--secondary-accent-color);
+      }
+    }
+  }
+}
