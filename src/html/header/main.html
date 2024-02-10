@@ -24,28 +24,22 @@
         </a>
       </div>
       <div class="header-main__burger">
-        <div class="cube">
-          <div class="cube__spinner">
-            <button class="cube__side cube__side--first header-main__burger-btn header-main__burger-open"
-                    type="button"
-                    aria-label="Открыть меню">
-              <svg width="40"
-                   height="40"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
-              </svg>
-            </button>
-            <button class="cube__side cube__side--second header-main__burger-btn header-main__burger-close"
-                    type="button"
-                    aria-label="Закрыть меню">
-              <svg width="40"
-                   height="40"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
+        <button class="header-main__burger-btn header-main__burger-open"
+                aria-label="Открыть Меню">
+          <svg width="40"
+               height="28"
+               aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <button class="header-main__burger-btn header-main__burger-close"
+                aria-label="Закрыть Меню">
+          <svg width="40"
+               height="40"
+               aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
       <nav class="header-main__nav">@include('nav-list.html', {class: 'header-main__nav-list'})</nav>
     </div>

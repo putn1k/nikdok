@@ -49,6 +49,14 @@
     cursor: pointer;
   }
 
+  &__burger-open {
+    display: var(--burger-visibility, inline-flex);
+  }
+
+  &__burger-close {
+    display: var(--burger-close-visibility, none);
+  }
+
   @include media-min ($xl) {
     position: static;
 

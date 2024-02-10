@@ -14,7 +14,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .is-open-menu {
-  --cube-pos: rotateY(90deg);
+  --burger-visibility: none;
+  --burger-close-visibility: inline-flex;
 
   overflow: hidden;
 
