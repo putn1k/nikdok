@@ -7,6 +7,17 @@ const sliderConfig = {
   mainHero: {
     speed: 600,
     parallax: true,
+  },
+  gallery: {
+    slidesPerView: 1.7,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
   }
 };
 

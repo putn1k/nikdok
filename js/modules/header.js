@@ -35,6 +35,17 @@ function menuIsCloseEvt() {
   headerModalNode ? headerModalNode.setAttribute( 'aria-hidden', 'true' ) : '';
 }
 
+const closeMenuAfterClick = ( selectorNodes ) => {
+  document.querySelectorAll( selectorNodes ).forEach( item => {
+    item.addEventListener( 'click', () => {
+      if ( window.matchMedia( '(max-width: 1200px)' ).matches ) {
+        document.documentElement.classList.remove( 'is-open-menu' );
+        menuIsCloseEvt();
+      }
+    } );
+  } );
+};
+
 const initObserver = () => {
   const targetNode = document.querySelector( '.header-main.header-fixed' );
   const observeNode = document.querySelector( '.header-main:not(.header-fixed)' );
@@ -55,6 +66,8 @@ const initHeaderSettings = () => {
   initObserver();
 
   if ( !burgerOpenNode || !burgerCloseNode ) return;
+
+  closeMenuAfterClick( '.header-nav-list a' );
 
   burgerOpenNode.addEventListener( 'click', openMenu );
   burgerCloseNode.addEventListener( 'click', closeMenu );
