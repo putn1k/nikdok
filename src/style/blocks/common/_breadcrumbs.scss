@@ -1,6 +1,6 @@
 .breadcrumbs {
-  color: var(--breadcrumbs-text, var(--main-text));
-  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
   & a {
     color: inherit;
@@ -8,12 +8,15 @@
   }
 
   @include media-min ($xl) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     & a {
       transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out;
 
       &:hover {
-        color: var(--accent);
-        text-decoration-color: var(--accent);
+        color: var(--secondary-accent-color);
+        text-decoration-color: inherit;
       }
     }
   }

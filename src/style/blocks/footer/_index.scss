@@ -1,6 +1,7 @@
 .site-footer {
   color: var(--primary-color);
   background-color: var(--theme-light-gray);
+  border-top: 1px solid var(--theme-medium-gray);
 
   &__inner {
     padding-top: 40px;

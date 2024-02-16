@@ -1,8 +1,17 @@
 .main-catalog {
+  &--page {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 30px;
     text-align: center;
+
+    &--left-align {
+      text-align: left;
+    }
   }
 
   &__list {

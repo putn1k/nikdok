@@ -11,7 +11,7 @@
 
   &__content {
     flex-grow: 1;
-    margin-top: var(--offset-top, 0);
+    margin-top: 70px;
   }
 
   &__section {
@@ -40,6 +40,10 @@
   }
 
   @include media-min ($xl) {
+    &__content {
+      margin-top: 0;
+    }
+
     &__section {
       padding: 120px 0;
     }

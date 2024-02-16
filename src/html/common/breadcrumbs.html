@@ -1,7 +1,7 @@
-<div class="breadcrumbs"
+<nav class="breadcrumbs"
      typeof="BreadcrumbList"
      vocab="https://schema.org/">
   <div class="container">
-    <a href="page-main.html">Главная</a>&ensp;&gt;&ensp;<span class="current-item">@if(context.title) {@title}</span>
+    <a href="page-main.html">Главная</a>&ensp;&gt;&ensp;@if(context.path) {@path&ensp;&gt;&ensp;}<span class="current-item">@if(context.title) {@title}</span>
   </div>
-</div>
+</nav>
