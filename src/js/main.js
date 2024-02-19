@@ -25,9 +25,14 @@ import {
 import {
   initGalleries,
 } from './modules/galleries.js';
+
 import {
   initAnimationInteger,
 } from './modules/animation-integers.js';
+
+import {
+  initSeoTextShower,
+} from './modules/shower.js';
 
 document.addEventListener( 'DOMContentLoaded', () => {
   iosVhFix();
@@ -39,5 +44,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initScrollTop();
     initGalleries();
     initAnimationInteger();
+    initSeoTextShower()
   } );
 } );
